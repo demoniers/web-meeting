@@ -11,7 +11,9 @@ export default function Panel() {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-
+    if (!token) {
+      useNavigate("/");
+    }
     fetch("http://localhost:5000/news", {
       headers: { Authorization: `Bearer ${token}` },
     })
