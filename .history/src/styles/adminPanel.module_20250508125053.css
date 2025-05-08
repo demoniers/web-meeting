@@ -1,0 +1,61 @@
+/* 🎮 Fondo del panel */
+.panel-container {
+    background: linear-gradient(120deg, #121212, #1a1a1a);
+    color: #e0e0e0;
+    font-family: "Orbitron", sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* 🔥 Encabezado del panel */
+  .panel-header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff3b3b;
+    text-shadow: 0px 0px 10px rgba(255, 59, 59, 0.7);
+    padding: 20px;
+  }
+  
+  /* 🏆 Tarjetas de gestión */
+  .panel-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(255, 59, 59, 0.4);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .panel-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* 🔗 Botones de acción */
+  .panel-button {
+    background: linear-gradient(90deg, #ff3b3b, #ff9500);
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .panel-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(255, 59, 59, 0.8);
+  }
+  
+  /* 📱 Estilos responsivos */
+  @media (max-width: 768px) {
+    .panel-header {
+      font-size: 2rem;
+    }
+  
+    .panel-card {
+      padding: 15px;
+    }
+  }
+  

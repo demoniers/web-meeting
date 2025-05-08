@@ -1,0 +1,69 @@
+/* 🎨 Estilos generales */
+body {
+  background: linear-gradient(120deg, #000000, #004d40);
+  color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 📌 Contenedores */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🏆 Títulos dinámicos */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #00ff99;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ff99;
+}
+
+/* 🖼️ Tarjetas y secciones */
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 255, 153, 0.4);
+}
+
+/* 🔥 Botones deportivos */
+.button {
+  background-color: #00ff99;
+  color: black;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ffffff;
+}
+
+/* 📱 Diseño responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,72 @@
+/* 🔥 Estilo de la barra de navegación */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff3b3b;
+  box-shadow: 0 4px 10px rgba(255, 59, 59, 0.4);
+}
+
+/* 🏆 Logo con estilo neón */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff3b3b;
+  text-shadow: 0px 0px 10px rgba(255, 59, 59, 0.7);
+}
+
+/* 🔗 Estilos de enlaces */
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  color: #ff9500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* 💡 Efecto de iluminación en hover */
+.link:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 8px rgba(255, 149, 0, 0.8);
+}
+
+/* 🎮 Línea de neón animada en hover */
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ff3b3b;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+/* 📱 Diseño responsivo */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .links {
+    flex-direction: column;
+  }
+  
+  .link {
+    font-size: 1rem;
+  }
+}
